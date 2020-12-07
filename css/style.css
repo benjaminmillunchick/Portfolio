@@ -192,7 +192,7 @@ padding-top: 40px;
 }
 
 .gallery{
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 2;
   display: flex;
   flex-direction: row;
@@ -280,7 +280,7 @@ img{
 
 /*This section is for the contact form */
 .contact-gallery{
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 3;
   display: flex;
   flex-direction: row;
