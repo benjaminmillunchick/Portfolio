@@ -479,7 +479,7 @@ img{
   }
 
   .about{
-      grid-column: 2;
+      grid-column: 1;
   }
 }
 
