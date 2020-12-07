@@ -280,7 +280,6 @@ img{
 
 /*This section is for the contact form */
 .contact-gallery{
-  grid-column: 1;
   grid-row: 3;
   display: flex;
   flex-direction: row;
@@ -309,12 +308,11 @@ img{
   display: grid;
   justify-content: center;
   grid-row-gap: 0px;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto;
   grid-template-rows: auto auto auto;
 }
 
 .about{
-  grid-column: 1;
   grid-row: 1;
   display: flex;
   flex-wrap: wrap;
@@ -327,7 +325,6 @@ img{
 }
 
 .steps{
-  grid-column: 1;
   display: grid;
   grid-auto-columns: auto 0px;
   grid-auto-rows: auto auto auto auto;
