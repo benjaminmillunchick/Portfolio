@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGE2PK35DN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LGE2PK35DN');
+  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta charset="UTF-8">
+    
+	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.csss">
+    <!--link for hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Millunchick's Cook - Homepage</title>
+</head>
+
+<body>
+    <a class="skip" href = "#main" > Skip to Main Content </a>
+    <nav> 
+        <div class = "nav">
+            <ul class = "nav_links">
+                <li class = "navitem"> <a href = "index.html">Homepage</a></li>
+                <li class = "navitem"> <a href = "Buiscuts.html">Biscuits</a></li>
+                <li class = "navitem"> <a href = "Crepes.html">Crepes</a></li>
+                <li class = "navitem"> <a href = "Chicken Wings.html" class = 'active'>Chicken Wings</a></li>
+            </ul>
+        </div> 
+    </nav>
+    
+    <header>
+    <!-- Hamburger Nav Menu -->
+    <div class="topnav">
+        <!-- Navigation links -->
+        <div id="myLinks">
+            <a href = "index.html" class = 'active'>Homepage</a>
+            <a href = "Buiscuts.html">Biscuits</a>
+            <a href = "Crepes.html">Crepes</a>
+            <a href = "Chicken Wings.html">Chicken Wings</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" aria-hidden="true"> </i></a>
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+      }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, function(){
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+      </script>
+    <div class='headcontainer'>
+        <div class="apple"><img src="images/ben and ava.png" alt="aple"/></div>
+        <div class = 'headtxt'>
+          <h1>Millunchick's</h1>
+          <h1>Cooks</h1>
+              <p>Some of the favorite family recipies from the Millunchick Family</p>
+        </div>  
+    </div>  
+    </header>
+	
+	<main class="container" id = 'main'>
+		<div class="about text-block">
+			<a id="about"></a>
+			<h2>About</h2>
+			<p>Chicken wings are just great. If you go to a resturaunt they are proably fried. Which is how they get them so darn crispy.
+				If you are like me, you don't have a deep frier at home, and don't want to. 
+				This is a great recipie to get wings super crispy at home in the oven. It takes some time, but worth it!</p>
+		</div>
+		
+		<div class="steps">
+			<div class="ingredients text-block">
+				<a id="ingredients"></a>
+				<h2>Ingredients</h2>
+				<p>Wings:</p>
+				<p>1 of those big packs of chicken wings</p>
+				<p>1 tbsp Salt</p>
+				<p></p>
+				<p>Sauce:</p>
+				<p>1 stick of butter (8 tbsp)</p>
+				<p>½ cup franks red hot</p>
+				<p>¼ cup sambal</p>
+				<p>1 tbls worcester sauce</p>
+				<p>1 teaspoon paprika</p>
+				<p>1 teaspoon cayenne</p>
+			</div>
+			
+			<div class="food"><img src="images/chickenwings.jpg" alt="chickenwings"/></div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step--image"><img src="images/oven.jpg" alt="oven"/></div>
+					</li>
+					<li>
+						<div class="step-1 text-block">
+							<a id="step-1"></a>
+							<h2>Step-1</h2>
+							<p> Preheat oven to 250℉</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/whole-wing.jpg" alt="whole wing"/></div>
+					</li>
+					<li>
+						<div class="step-2 text-block">
+							<a id="step-2"></a>
+							<h2>Step-2</h2>
+							<p>Using a cleaver or chef knife, separate wings into drums and flats if not already done so for you. 
+								Using your knife find your way into the joint and separate into parts. Also remove wing tips as they can burn. 
+								They are never good if left on, so just do yourself a favor by roving those worthless little chicken bits. 
+								But if you're one of those people that saves bones in the freezer to make stock later, 
+								then add it to your collection.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/season-wings.jpg" alt="seasoning wings"/></div>
+					</li>
+					<li>
+						<div class="step-3 text-block">
+							<a id="step-3"></a>
+							<h2>Step-3</h2>
+							<p>In a large bowl sprinkle wings with salt and baking powder. 
+								This is not to season or coat them, so if it seems like a not enough that is because it isn’t. 
+								This is only to help the wings get crispy in the oven. 
+								The wings will be seasoned by the sauce you are going to make. 
+								The baking powder helps lower the temperature at which the miard reaction happens. 
+								If you want to learn more about thoat, just google it. 
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/baking-sheet-wings.jpg" alt="baking sheet wings"/></div>
+					</li>
+					<li>
+						<div class="step-4 text-block">
+							<a id="step-4"></a>
+							<h2>Step-4</h2>
+							<p>Evenly spread out wings on a baking sheet with an oven safe cooling rack on top. For easy clean up, 
+								line the baking sheet with tin foil. Then put them in the oven to bake for 30 minutes  </p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/oven.jpg" alt="oven"/></div>
+					</li>
+					<li>
+						<div class="step-5 text-block">
+							<a id="step-5"></a>
+							<h2>Step-5</h2>
+							<p>After 30 minutes increase oven temperature to 425℉ and bake for another 
+								30-45 minutes until winds are golden brown and crispy. </p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/sauce.jpg" alt="sauce"/></div>
+					</li>
+					<li>
+						<div class="step-5 text-block">
+							<a id="step-5"></a>
+							<h2>Step-5</h2>
+							<p>Take the wings out of the oven to let them rest. 
+								And in a small saucepan melt the butter and combine the franks, sambal, worcester sauce, paprika, and cayan. 
+								Stirring to combine.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/finished-wings.jpg" alt="finished wings"/></div>
+					</li>
+					<li>
+						<div class="step-6 text-block">
+							<a id="step-6"></a>
+							<h2>Step-6</h2>
+							<p>In a large bowl toss the wings in the sauce and enjoy!</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<p>Benjamin Millunchick &#169; 2020</p>
+	</footer>
+</body>
+</html>

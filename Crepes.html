@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGE2PK35DN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LGE2PK35DN');
+  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta charset="UTF-8">
+    
+	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--link for hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Millunchick's Cook - Homepage</title>
+</head>
+
+<body>
+    <a class="skip" href = "#main" > Skip to Main Content </a>
+    <nav> 
+        <div class = "nav">
+            <ul class = "nav_links">
+                <li class = "navitem"> <a href = "index.html">Homepage</a></li>
+                <li class = "navitem"> <a href = "Buiscuts.html">Biscuits</a></li>
+                <li class = "navitem"> <a href = "Crepes.html" class = 'active'>Crepes</a></li>
+                <li class = "navitem"> <a href = "Chicken Wings.html">Chicken Wings</a></li>
+            </ul>
+        </div> 
+    </nav>
+    
+    <header>
+    <!-- Hamburger Nav Menu -->
+    <div class="topnav">
+        <!-- Navigation links -->
+        <div id="myLinks">
+            <a href = "index.html" class = 'active'>Homepage</a>
+            <a href = "Buiscuts.html">Biscuits</a>
+            <a href = "Crepes.html">Crepes</a>
+            <a href = "Chicken Wings.html">Chicken Wings</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" aria-hidden="true"> </i></a>
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+      }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, function(){
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+      </script>
+    <div class='headcontainer'>
+        <div class="apple"><img src="images/ben and ava.png" alt="aple"/></div>
+        <div class = 'headtxt'>
+          <h1>Millunchick's</h1>
+          <h1>Cooks</h1>
+              <p>Some of the favorite family recipies from the Millunchick Family</p>
+        </div>  
+    </div>  
+    </header>
+	
+	<main class="container" id = 'main'>
+		<div class="about text-block">
+			<a id="about"></a>
+			<h2>About</h2>
+			<p>Crepes are special. Mom used to make them all the time when we were kids.
+				They look fancy, but really aren't that hard to make. This entire recipe is made in a blender.
+				Also, you can make these savory or sweet. Our family likes them for breakfast with jelly, jam, or Nutella indide!
+				</p>
+		</div>
+		
+		<div class="steps">
+			<div class="ingredients text-block">
+				<a id="ingredients"></a>
+				<h2>Ingredients</h2>
+				<p>1 1/2 cup All Purpose Flour</p>
+				<p>1 tsp salt</p>
+				<p>2 tsp baking powder</p>
+				<p>4 tbsp powdered sugar</p>
+				<p>4 eggs</p>
+				<p>2 cup soy or almond milk</p>
+				<p>A glug of vanilla or amaretto</p>
+			</div>
+			
+			<div class="food"><img src="images/crepes.jpg" alt="crepes"/></div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step--image"><img src="images/blender.jpg" alt="blender"/></div>
+					</li>
+					<li>
+						<div class="step-1 text-block">
+							<a id="step-1"></a>
+							<h2>Step-1</h2>
+							<p> Add eggs, milk, and vanilla/amaretto to a blender.</p> 
+							<p>	Add salt, baking powder and powdered sugar then blend.</p> 
+							<p>	Add flour a ½ c. at a time, pulsing the blender between additions</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/Buttering-pan-2.jpg" alt="buttering pan"/></div>
+					</li>
+					<li>
+						<div class="step-2 text-block">
+							<a id="step-2"></a>
+							<h2>Step-2</h2>
+							<p>Heat up a nonstick pan.  
+							When the pan is hot, take a frozen stick of butter and “draw” a slick of butter around the edge of the pan. 
+							If your butter turns brown right away, it’s too hot.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/crepe.jpg" alt="crepe"/></div>
+					</li>
+					<li>
+						<div class="step-3 text-block">
+							<a id="step-3"></a>
+							<h2>Step-3</h2>
+							<p>Pour batter into the center of the hot pan until it covers about half the area.  S
+								wirl the pan until the batter covers the base of the pan.  Cook until the top is dry.  
+								Flip the crepe and cook for another minute or so.</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			
+			<div class='card'>
+				<ul>
+					<li>
+						<div class="step-image"><img src="images/crepes.jpg" alt="crepes"/></div>
+					</li>
+					<li>
+						<div class="step-4 text-block">
+							<a id="step-4"></a>
+							<h2>Step-4</h2>
+							<p>Fill with the fillings of your choice, and enjoy!</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<p>Benjamin Millunchick &#169; 2020</p>
+	</footer>
+</body>
+</html>

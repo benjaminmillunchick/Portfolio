@@ -1,0 +1,198 @@
+<!--This is page one for final-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LGE2PK35DN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-LGE2PK35DN');
+  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta charset="UTF-8">
+    
+	<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--link for hamburger menu -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Millunchick's Cook - Homepage</title>
+</head>
+
+<body>
+    <a class="skip" href = "#main" > Skip to Main Content </a>
+    <nav> 
+        <div class = "nav">
+            <ul class = "nav_links">
+                <li class = "navitem"> <a href = "index.html" class = 'active'>Homepage</a></li>
+                <li class = "navitem"> <a href = "Buiscuts.html">Biscuits</a></li>
+                <li class = "navitem"> <a href = "Crepes.html">Crepes</a></li>
+                <li class = "navitem"> <a href = "Chicken Wings.html">Chicken Wings</a></li>
+            </ul>
+        </div> 
+    </nav>
+    
+    <header>
+    <!-- Hamburger Nav Menu -->
+    <div class="topnav">
+        <!-- Navigation links -->
+        <div id="myLinks">
+            <a href = "index.html" class = 'active'>Homepage</a>
+            <a href = "Buiscuts.html">Biscuits</a>
+            <a href = "Crepes.html">Crepes</a>
+            <a href = "Chicken Wings.html">Chicken Wings</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars" aria-hidden="true"> </i></a>
+    </div>
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+      }
+      </script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script>
+        $(document).ready(function(){
+        $("a").on('click', function(event) {
+            if (this.hash !== "") {
+              event.preventDefault();
+              var hash = this.hash;
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, function(){
+                window.location.hash = hash;
+              });
+            } 
+          });
+        });
+      </script>
+    <div class='headcontainer'>
+        <div class="apple"><img src="images/ben and ava.png" alt="aple"/></div>
+        <div class = 'headtxt'>
+          <h1>Millunchick's</h1>
+          <h1>Cooks</h1>
+              <p>Some of the favorite family recipies from the Millunchick Family</p>
+        </div>  
+    </div>  
+    </header>
+
+    <main class='container' id = 'main'>
+        <div class="about text-block">
+          <a id="about"></a>
+          <h2>Mouse over the images below of the recipies to discover the recipies</h2>
+        </div>
+        <div class="gallery"> 
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/biscuits.jpg" alt="biscuits" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Buttermilk Biscuits</h1>
+              <p>My sisters specialty</p>
+              <button><a href = "Buiscuts.html">TO RECIPE</a></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/crepes.jpg" alt="crepes" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Crepes</h1>
+              <p>A special breakfast from mom</p>
+              <button><a href = "Crepes.html">TO RECIPE</a></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/chickenwings.jpg" alt="chicken wings" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Chicken Wings</h1>
+              <p>Super easy and satisfying!</p>
+              <button><a href = "Chicken Wings.html">TO RECIPE</a></button>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/dumplings.jpg" alt="dumplings" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Dumplings</h1>
+              <p>RECIPE COMING SOON!</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/chicago pizza.webp" alt="chicago pizza" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Chicago Pizza</h1>
+              <p>RECIPE COMING SOON!</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images/tarts.jpg" alt="tarts" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>Tarts</h1>
+              <p>RECIPE COMING SOON!</p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+        <div class="contact-gallery">
+          <div class="contact-form">
+            <h2>Contact Me!</h2>
+              <p>Have a question or comment on the recipies? Do you want to see more?</p>
+              <p>Fill out this form and I'll reach out to you as soon as I can!</p>
+          </div>
+          <div class="contact-form" id='contact'>
+            <form action="https://formspree.io/f/xqkgdowp" method="POST">
+              <fieldset>
+                <a id="about"></a>
+                  <p><label for="name_id">Name</label></p>
+                  <p><input id="name_id" type="text" placeholder="Your Name Here..." name="name"></p>
+                  <p><label for="email_id">Email</label></p>
+                  <p><input id="email_id" type="email" placeholder="Your Email Here..." name="name"></p>
+                  <p><label for="message_id">Message</label></p>
+                  <p><input id="message_id" type="text" placeholder="Your Message Here..." name="name"></p>
+                <input type="submit" value="Submit">
+              </fieldset>
+            </form>
+          </div>
+        </div>
+    </main>
+
+    <footer>
+      <p>Benjamin Millunchick &#169; 2020</p>
+    </footer>
+</body>
+</html>
