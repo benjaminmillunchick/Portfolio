@@ -63,19 +63,19 @@ a.skip:focus{
   text-decoration-style: solid;
 }
 
-.topnav {
+.hnav {
   /* overflow: hidden; */
   background-color: transparent;
   position: relative;
 }
 
 /* Hide the links inside the navigation menu  */
-.topnav #myLinks {
+.hnav #myLinks {
   display: none;
 }
 
 /* Navigation menu links style*/
-.topnav a {
+.hnav a {
   color: black;
   padding: 10px 12px;
   text-decoration: none;
@@ -85,7 +85,7 @@ a.skip:focus{
 }
 
 /* Hamburger menu style */
-.topnav a.icon {
+.hnav a.icon {
   background:white;
   display: block; 
   position: absolute;   
@@ -94,12 +94,12 @@ a.skip:focus{
 }
 
 /* Add a background color on mouse-over */
-.topnav a:hover {
+.hnav a:hover {
   background-color: black; 
   color: white;
 }
 
-.topnav a.icon:focus { 
+.hnav a.icon:focus { 
   background-color: black; 
   color: white; 
 }
@@ -395,11 +395,11 @@ img{
   }
   
   /* nav items */
-  .topnav a.icon { 
+  .hnav a.icon { 
       display: none; 
   }
   
-  .topnav { 
+  .hnav { 
       display: none; 
   }
   
@@ -447,7 +447,7 @@ img{
 
 /* Desktop View */
 @media screen and (min-width: 800px){
-  .topnav { 
+  .hnav { 
       display: hide; 
   }
 
